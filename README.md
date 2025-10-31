@@ -1,12 +1,28 @@
 # Apologies Pixel Art Experience
 
-This project presents a small single-page web scene featuring a seated pixel art character.
-Tapping or pressing the space/enter keys prompts the character to deliver a randomly
-selected apology message in Japanese, displayed inside a floating speech bubble.
+Next.js implementation of the pixel art apology generator. Tap or press enter on the
+seated character to trigger a brief dogeza animation and display a randomized Japanese
+apology message inside the speech bubble.
+
+## Prerequisites
+
+- Node.js 18.17 or newer
+- npm 9 or newer
 
 ## Getting Started
 
-Open `index.html` in any modern browser. The `script.js` file draws the sprite and handles
-interactions, while `styles.css` provides layout and presentation.
+Install dependencies and launch the development server:
 
-No build step or external dependencies are required.
+```bash
+npm install
+npm run dev
+```
+
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Available Scripts
+
+- `npm run dev` — start the development server with hot reloading.
+- `npm run build` — create an optimized production build.
+- `npm run start` — run the production build locally.
+- `npm run lint` — run ESLint with the Next.js configuration.
