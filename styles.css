@@ -186,9 +186,8 @@ canvas {
 }
 
 .speech-bubble {
-  position: absolute;
-  inset: auto 50% -1.5rem auto;
-  translate: -50% 100%;
+  position: relative;
+  margin: 1.5rem auto 0;
   min-width: min(240px, 85vw);
   max-width: min(280px, 90vw);
   padding: 1rem 1.25rem;
@@ -210,7 +209,7 @@ canvas {
   position: absolute;
   top: -12px;
   left: 50%;
-  translate: -50% 0;
+  transform: translateX(-50%);
   width: 0;
   height: 0;
   border-left: 12px solid transparent;
@@ -224,7 +223,7 @@ canvas {
   position: absolute;
   top: -9px;
   left: 50%;
-  translate: -50% 0;
+  transform: translateX(-50%);
   width: 0;
   height: 0;
   border-left: 9px solid transparent;
@@ -240,10 +239,11 @@ canvas {
 
 .speech-bubble p {
   margin: 0;
-  font-size: clamp(0.875rem, 2.5vw, 0.95rem);
-  line-height: 1.6;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  line-height: 1.7;
   color: var(--color-text);
-  font-weight: 500;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .instruction {
@@ -285,7 +285,8 @@ canvas {
 
   .speech-bubble {
     min-width: 260px;
-    max-width: 300px;
+    max-width: 320px;
+    margin: 2rem auto 0;
   }
 }
 
@@ -306,8 +307,9 @@ canvas {
 
   .speech-bubble {
     min-width: min(200px, 80vw);
+    max-width: min(260px, 85vw);
     padding: 0.875rem 1rem;
-    inset: auto 50% -1rem auto;
+    margin: 1.25rem auto 0;
   }
 
   canvas {

@@ -5,32 +5,36 @@ document.addEventListener("DOMContentLoaded", () => {
   const message = document.getElementById("message");
   const button = document.getElementById("character-button");
 
+  // シンプルで分かりやすい座っているキャラクター
   const palette = {
     ".": null,
-    H: "#332c29",
-    S: "#f7d6b5",
-    B: "#4b86b4",
-    P: "#3f5573",
-    C: "#ffb347"
+    "B": "#2d2d3d",  // 黒髪
+    "S": "#ffd4a3",  // 肌色
+    "W": "#ffffff",  // 白（目）
+    "E": "#333333",  // 黒（目）
+    "R": "#ff6b6b",  // 赤（服）
+    "D": "#c92a2a",  // 濃い赤（服の影）
+    "P": "#4a5568",  // ズボン
+    "O": "#8b7355"   // 茶色（靴）
   };
 
   const sprite = [
     "................",
-    "...HHHHHH.......",
-    "..HHHHHHHH......",
-    "..HSSSSSHH......",
-    "..HSSSSSHH......",
-    "..HHHHHHHH......",
-    "..HHBBBBHH......",
-    "...BBBBBB.......",
-    "...BBBBBB.......",
-    "..PPBBBBPP......",
-    "..PPPPPPPP......",
-    "...PPPPPP.......",
-    "...CC....CC.....",
-    "...CC....CC.....",
-    "..CCCC..CCCC....",
-    ".CCCCCCCCCCCC..."
+    ".....BBBBBB.....",
+    "....BBBBBBBB....",
+    "....SSSSSSSS....",
+    "...WSSEESSESS...",
+    "...SSSSSSSSSS...",
+    "....SSSSSSSS....",
+    "....RRRRRRRR....",
+    "...RRRRRRRRRR...",
+    "...RDRRRRRRRD...",
+    "..RRRRRRRRRRRR..",
+    "...PPPPPPPPPP...",
+    "...PP......PP...",
+    "...PP......PP...",
+    "..OOO......OOO..",
+    "................"
   ];
 
   const drawPixelArt = () => {
