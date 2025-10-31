@@ -68,6 +68,10 @@ body {
   transform: translateY(2px);
 }
 
+.character.bowing {
+  transform: translateY(4px) scale(0.99);
+}
+
 canvas {
   width: min(200px, 60vw);
   height: min(200px, 60vw);
